@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.spring</groupId>
-	<artifactId>spring-boot-jdbc-curd</artifactId>
+	<artifactId>jdbc-crud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
-	<name>spring-boot-jdbc-curd</name>
-	<description>Program for the concept of jdbc crud in SpringBoot</description>
+	<name>jdbc-crud</name>
+	<description>Spring project for CRUD</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.8.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<version>2.0.3.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
@@ -28,23 +27,22 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-jdbc</artifactId>
-			</dependency>
-			<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
