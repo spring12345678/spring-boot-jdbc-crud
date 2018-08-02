@@ -7,6 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBootJdbcCurdApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootJdbcCurdApplication.class, args);
+		//SpringApplication.run(SpringBootJdbcCurdApplication.class, args);
 	}
 }
