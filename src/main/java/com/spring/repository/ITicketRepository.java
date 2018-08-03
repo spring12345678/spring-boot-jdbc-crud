@@ -9,7 +9,7 @@ public interface ITicketRepository {
 	public int updateTicket(Ticket ticket);
 	public List<Ticket> selectAll();
 	public Ticket selectTicketById(int id);
-	public Ticket deleteTicketById(int id);
+	public int deleteTicketById(int id);
 	public int deleteAllTickets();
 	
 
